@@ -1,0 +1,55 @@
+.options{
+    list-style: none;
+    margin: 2%;
+    padding: 0;
+}
+.options li {
+    padding:  10px;
+    background-color:  rgb(95,125,241);
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.options li:hover {
+     cursor: pointer;
+     background-color: rgb(51, 38, 226);
+}
+.options .crt , .options .crt:hover{
+    background-color: green;
+    font-weight: bolder;
+    border: 3px solid green;
+}
+.options .incrt , .options .incrt:hover{
+    background-color: red;
+    font-weight: bolder;
+    border: 3px solid red;
+}
+.options[disabled]{
+    pointer-events: none;
+    opacity: 0.8;
+}
+.p1{
+    color: green;
+    font-size: 28px;
+}
+.p2{
+    color: red;
+    font-size: 28px;
+}
+.p1::after{
+    content: '\2713';
+    text-shadow: 2px 2px 2px green;
+}
+.p2::before{
+    content: ' \274c\00a0 ';
+    text-shadow: 2px 2px 2px red;
+}
+.options .crt::after{
+    content: '\00a0\00a0\00a0\00a0\00a0\2713';
+    text-shadow: 2px 2px 2px green;
+}
+.options .incrt::after{
+    content: '\00a0\00a0\00a0\00a0\00a0\274c';
+    text-shadow: 2px 2px 2px red;
+}
+

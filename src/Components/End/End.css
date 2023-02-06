@@ -1,0 +1,21 @@
+.End{
+    text-align: center;
+    background-color: rgb(193, 201, 225);
+    margin: 2%;
+    padding: 10%;
+}
+.End h1{
+    color: mediumblue;
+    
+}
+.End button{
+    color: mediumblue;
+    background-color: rgb(71, 103, 103);
+    padding: 15px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.End button:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
